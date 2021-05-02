@@ -15,7 +15,9 @@ const emailError = document.querySelector("#emailError");
 
 function validateForm(event) {
   event.preventDefault();
+  //count how many inputs that are valid.
   let count = 0;
+  //Check if user has entered valid inputs, if false, show the error message by display it as block.
   if (checkLength(fullName.value, 0)) {
     nameError.style.display = "none";
     count += 1;
@@ -40,6 +42,7 @@ function validateForm(event) {
   } else {
     emailError.style.display = "block";
   }
+  //if all inputs (4) are valid, display message.
   if (count === 4) {
     containerForm.innerHTML += `<div class="success-message">Your submission was a success!</div>`;
   }
@@ -47,8 +50,8 @@ function validateForm(event) {
 
 form.addEventListener("submit", validateForm);
 
-function checkLength(value, len) {
-  if (value.trim().length > len) {
+function checkLength(value, length) {
+  if (value.trim().length > length) {
     return true;
   } else {
     return false;
@@ -56,7 +59,7 @@ function checkLength(value, len) {
 }
 
 function checkEmail(email) {
-  const regEx = /\S+@\S+\.\S+/;
-  const patternMatches = regEx.test(email);
-  return patternMatches;
+  const regularExpression = /\S+@\S+\.\S+/;
+  const matchExpressionString = regularExpression.test(email);
+  return matchExpressionString;
 }

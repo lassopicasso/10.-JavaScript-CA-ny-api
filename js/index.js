@@ -1,4 +1,4 @@
-const url = "https://imdb-api.com/en/API/SearchMovie/k_wa6hawzf/batman";
+const url = "https://imdb-api.com/en/API/SearchMovie/k_0t32uy7t/batman";
 
 const containerResults = document.querySelector(".details");
 
@@ -25,7 +25,6 @@ async function batmanOverview() {
               </div></a>`;
     }
   } catch (error) {
-    console.log(error);
     containerResults.innerHTML = message("error", error);
   }
 }
