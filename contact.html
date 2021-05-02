@@ -20,20 +20,23 @@
   </header>
 
   <body>
-    <main class="container">
+    <main class="containerForm">
       <form id="contactForm">
         <div>
-          <input name="firstname" id="name" placeholder="Name (required)" />
-            <div class="formError id="nameError">Please enter your name</div>
+          <input name="text" id="fullName" placeholder="Name (required)" />
+          <div class="formError nameError" id="nameError">Please enter your name</div>
         </div>
         <div>
           <input name="text" id="subject" placeholder="Subject (minimum 10 characters)" />
-        </div>
-        <div>
-          <input name="email" id="email" placeholder="Email (required)" />
+          <div class="formError subjectError" id="subjectError">Please enter minimum 10 characters</div>
         </div>
         <div>
           <input name="text" id="address" placeholder="Address (minimum 25 characters)" />
+          <div class="formError addressError" id="addressError">Please enter minimum 25 characters</div>
+        </div>
+        <div>
+          <input name="email" id="email" placeholder="Email (required)" />
+          <div class="formError emailError" id="emailError">Please enter valid email, e.g. 1234@yahoo.com</div>
         </div>
         <button>Submit</button>
       </form>

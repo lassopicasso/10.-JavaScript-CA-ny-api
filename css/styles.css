@@ -22,17 +22,6 @@ body {
   border-radius: 5% 5% 0 0;
 }
 
-.image {
-  margin-bottom: 0.5em;
-  height: 350px;
-  max-width: 100%;
-  background-position-x: 50%;
-  background-position-y: 40%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 5% 5% 0 0;
-}
-
 .starActors_image {
   margin-bottom: 0.5em;
   height: 200px;
@@ -129,4 +118,46 @@ nav li p {
   text-align: center;
   border: 2px solid red;
   background-color: #d9c7cb;
+}
+
+.formError {
+  display: none;
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+span {
+  font-weight: bold;
+}
+
+.containerForm {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 2em;
+}
+
+#contactForm,
+.success-message {
+  display: inline-block;
+  padding: 2em;
+  border-radius: 5%;
+  border: solid;
+  margin: auto;
+  text-align: center;
+  background-color: #d9c7cb;
+}
+
+.success-message {
+  border-color: green;
+  border-width: 10px;
+}
+
+#contactForm div input,
+#contactForm button {
+  margin-top: 20px;
+}
+
+#contactForm div input {
+  width: 300px;
 }

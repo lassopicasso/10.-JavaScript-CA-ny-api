@@ -1,4 +1,4 @@
-const url = "https://imdb-api.com/en/API/SearchMovie/k_0t32uy7t/batman";
+const url = "https://imdb-api.com/en/API/SearchMovie/k_wa6hawzf/batman";
 
 const containerResults = document.querySelector(".details");
 
